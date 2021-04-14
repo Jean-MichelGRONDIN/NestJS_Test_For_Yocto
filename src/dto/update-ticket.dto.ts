@@ -1,6 +1,9 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class CreateTicketDto {
+export class UpdateTicketDto {
+    @ApiProperty()
+    readonly _id: string;
+
     @ApiProperty()
     readonly name: string;
 
